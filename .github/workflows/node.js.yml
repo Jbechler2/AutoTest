@@ -18,6 +18,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Change directory
-      run: cd autoTest/react
-    - name: Run react project
-      run: npm run start
+      run: cd autoTest/react && npm run start
