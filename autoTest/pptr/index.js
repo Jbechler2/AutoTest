@@ -9,7 +9,7 @@ async function getBunnies(){
 
 const page = await browser.newPage();
 
-const url = 'http://localhost:3004/'
+const url = 'http://localhost:3000/'
 
 await page.goto(url);
 
