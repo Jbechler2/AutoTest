@@ -24,4 +24,4 @@ jobs:
     - name: Run react project
       run: cd autoTest/react && npm run start &
     - name: Run puppeteer
-      run: cd autoTest/pptr && node node_modules/puppeteer/install.js && node index.js >> temp.txt
+      run: cd autoTest/pptr && node node_modules/puppeteer/install.js && node index.js >> temp.txt && cat temp.txt
