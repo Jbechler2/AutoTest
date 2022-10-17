@@ -2,7 +2,7 @@ import puppeteer from "puppeteer";
 
 async function getBunnies(){
     const browser = await puppeteer.launch({
-        headless: false,
+        headless: true,
         defaultViewport: null
     }); 
 
