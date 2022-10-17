@@ -18,4 +18,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Change directory
-      run: cd autoTest/react && npm run start
+      run: cd autoTest/react && npm run start &
+    - name: Run puppeteer
+      run: cd autoTest/pptr && node index.js
