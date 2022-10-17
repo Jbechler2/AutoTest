@@ -20,4 +20,4 @@ jobs:
     - name: Change directory
       run: cd autoTest/react && npm run start &
     - name: Run puppeteer
-      run: cd autoTest/pptr && node index.js
+      run: cd autoTest/pptr && node node_modules/puppeteer/install.js && node index.js
