@@ -26,4 +26,4 @@ jobs:
     - name: Run puppeteer
       run: cd autoTest/pptr && node node_modules/puppeteer/install.js && node index.js >> temp.txt && cat temp.txt
     - name: Check output
-      run: cd autoTest/pptr && cat temp.txt
+      run: cd autoTest/pptr && grep "End Test Suite':' Result':' Failed" temp.txt
