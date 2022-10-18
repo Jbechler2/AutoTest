@@ -27,4 +27,7 @@ jobs:
       run: cd autoTest/pptr && node node_modules/puppeteer/install.js && node index.js >> temp.txt && cat temp.txt
     - name: Check output
       shell: bash {0}
-      run: cd autoTest/pptr && grep "End Test Suite:\ Result:\ Failed" temp.txt && if [[ "$?" == 0 ]]; then echo success; else echo fail; fi
+      run: |
+        cd autoTest/pptr 
+        grep "End Test Suite:\ Result:\ Failed" temp.txt
+        if [[ "$?" == 0 ]]; then echo success; else echo fail; fi
